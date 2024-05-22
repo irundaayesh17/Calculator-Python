@@ -24,7 +24,7 @@ def evaluate_calculations():
         type_bar.insert(0, eval(calc))
     except ZeroDivisionError:
         type_bar.delete(0, END)
-        type_bar.insert(0, "0")
+        type_bar.insert(0, "Cannot divide by zero")
     except Exception as e:
          print("Error" + e)
 
